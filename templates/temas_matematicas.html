@@ -1,0 +1,557 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas - Estudiando con Cecytos🐆</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="bienvenida">
+
+        <h1>Matemáticas 📐</h1>
+
+        <p>Bienvenido al área de Matemáticas. Aquí aprenderás conceptos, procedimientos y ejemplos que te ayudarán a desarrollar el pensamiento lógico y resolver problemas de la vida cotidiana. Las matemáticas permiten comprender cantidades, reconocer patrones, medir objetos, interpretar información y encontrar soluciones mediante el razonamiento.</p>
+
+        <p>En esta sección encontrarás explicaciones paso a paso, ejemplos resueltos y aplicaciones de distintos temas. La recomendación es leer cada explicación, revisar los procedimientos y practicar con ejercicios propios para fortalecer lo aprendido.</p>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>1. ¿Qué es una ecuación?</h2>
+
+            <p>Una ecuación es una igualdad matemática que contiene una o más incógnitas representadas por letras, como x, y o z. Resolver una ecuación significa encontrar los valores que hacen verdadera la igualdad.</p>
+
+            <p>Las ecuaciones están formadas por dos miembros separados por el signo igual. En cada miembro pueden aparecer números, variables y operaciones matemáticas.</p>
+
+            <p>Las incógnitas representan cantidades desconocidas. Para encontrarlas, se realizan operaciones que permiten simplificar la expresión y mantener la igualdad.</p>
+
+            <p><strong>Características de las ecuaciones:</strong></p>
+
+            <p>Contienen el signo igual, pueden incluir números y letras, tienen una o más incógnitas y pueden resolverse mediante diferentes procedimientos matemáticos.</p>
+
+            <p><strong>Ejemplo:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x + 5 = 12</p>
+                <p>x = 12 - 5</p>
+                <p><strong>x = 7</strong></p>
+            </div>
+
+            <p><strong>¿Cómo se comprueba?</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>7 + 5 = 12</p>
+                <p>12 = 12</p>
+            </div>
+
+            <p>La solución es correcta porque ambos lados de la igualdad tienen el mismo valor.</p>
+
+            <p><strong>Importancia:</strong> Las ecuaciones se utilizan para calcular cantidades desconocidas, determinar precios, resolver problemas de edades, calcular distancias y representar situaciones de distintas ciencias.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/ecuaciones.jpg') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuacion.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>Elementos de una ecuación</h3>
+
+            <p>Una ecuación puede contener números, variables, coeficientes, operadores y términos. Los términos son las partes que se separan por los signos de suma o resta. El coeficiente es el número que acompaña a una variable; por ejemplo, en 4x, el coeficiente es 4.</p>
+
+            <p>El miembro izquierdo es todo lo que aparece antes del signo igual y el miembro derecho es lo que aparece después. Para resolverla, debemos realizar operaciones equivalentes en ambos miembros, de manera que la igualdad se conserve.</p>
+
+            <h3>Tipos de ecuaciones</h3>
+
+            <p>Las ecuaciones se pueden clasificar según el grado de la incógnita y la cantidad de variables. Por ejemplo, existen ecuaciones de primer grado, segundo grado y tercer grado. También hay ecuaciones con una incógnita o con varias incógnitas.</p>
+
+            <h3>Consejo para resolver</h3>
+
+            <p>Lee con atención la ecuación, identifica qué valor se desconoce, realiza una operación a la vez y comprueba el resultado sustituyendo la respuesta en la expresión original. La comprobación ayuda a detectar errores de cálculo.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>2. Aritmética y álgebra</h2>
+
+            <p>La aritmética y el álgebra son ramas fundamentales de las matemáticas. Ambas permiten realizar cálculos, analizar cantidades y encontrar soluciones a diferentes problemas.</p>
+
+            <p><strong>Aritmética:</strong> Estudia los números y las operaciones básicas, como la suma, la resta, la multiplicación y la división. También incluye el trabajo con fracciones, porcentajes, potencias y raíces.</p>
+
+            <p><strong>Álgebra:</strong> Utiliza letras, números y símbolos para representar cantidades conocidas o desconocidas. Permite expresar relaciones matemáticas mediante fórmulas y ecuaciones.</p>
+
+            <p><strong>Operaciones aritméticas:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>Suma: 8 + 4 = 12</p>
+                <p>Resta: 15 - 6 = 9</p>
+                <p>Multiplicación: 5 × 3 = 15</p>
+                <p>División: 20 ÷ 4 = 5</p>
+            </div>
+
+            <p><strong>Ejemplo de álgebra:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x + 4 = 12</p>
+                <p>x = 12 - 4</p>
+                <p><strong>x = 8</strong></p>
+            </div>
+
+            <p><strong>Diferencias:</strong> La aritmética trabaja principalmente con cantidades numéricas específicas, mientras que el álgebra permite utilizar variables para representar diferentes valores y generalizar relaciones.</p>
+
+            <p><strong>Aplicaciones:</strong> La aritmética ayuda a calcular gastos, descuentos y cambios de dinero. El álgebra permite crear fórmulas, calcular cantidades desconocidas y resolver problemas más complejos.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/aritmetica.jpg') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/aritmetica.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>Elementos de la aritmética</h3>
+
+            <p>Los números naturales se utilizan para contar; los enteros incluyen números negativos, positivos y el cero; los racionales pueden expresarse como fracciones, y los reales incluyen tanto números racionales como irracionales.</p>
+
+            <p>En las operaciones se debe respetar la jerarquía: primero se resuelven los paréntesis, después las potencias y raíces, luego las multiplicaciones y divisiones, y finalmente las sumas y restas. Cuando dos operaciones tienen la misma prioridad, se resuelven de izquierda a derecha.</p>
+
+            <h3>Elementos del álgebra</h3>
+
+            <p>Una expresión algebraica combina números, letras y operaciones. Por ejemplo, 3x + 2 contiene la variable x, el coeficiente 3 y el término independiente 2. Una fórmula es una expresión que representa una relación entre cantidades.</p>
+
+            <h3>Ejemplo de uso cotidiano</h3>
+
+            <p>Si cada cuaderno cuesta 18 pesos y queremos comprar x cuadernos, el costo total se representa con la expresión 18x. Si compramos 4 cuadernos, sustituimos x por 4: 18(4) = 72 pesos.</p>
+
+            <p>La aritmética permite obtener resultados concretos, mientras que el álgebra permite representar una regla que funciona para muchos valores.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>3. Ecuaciones de primer grado</h2>
+
+            <p>Las ecuaciones de primer grado son expresiones matemáticas en las que la incógnita tiene como mayor exponente el número uno. También se conocen como ecuaciones lineales de una variable.</p>
+
+            <p>Su objetivo es encontrar el valor de la incógnita mediante operaciones que mantienen la igualdad. Para resolverlas, se simplifican los términos y se agrupan las cantidades semejantes.</p>
+
+            <p><strong>Forma general:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>ax + b = 0</p>
+                <p>a ≠ 0</p>
+            </div>
+
+            <p>En esta expresión, x es la incógnita, mientras que a y b son números conocidos.</p>
+
+            <p><strong>Pasos para resolverlas:</strong></p>
+
+            <p>Primero se eliminan los paréntesis, si existen. Después se agrupan los términos semejantes, se pasan las cantidades conocidas al otro miembro mediante operaciones equivalentes y finalmente se despeja la incógnita.</p>
+
+            <p><strong>Ejemplo resuelto:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>3x + 6 = 18</p>
+                <p>3x = 18 - 6</p>
+                <p>3x = 12</p>
+                <p>x = 12 ÷ 3</p>
+                <p><strong>x = 4</strong></p>
+            </div>
+
+            <p><strong>Comprobación:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>3(4) + 6 = 18</p>
+                <p>12 + 6 = 18</p>
+                <p>18 = 18</p>
+            </div>
+
+            <p><strong>Aplicaciones:</strong> Se utilizan para calcular el precio de productos, determinar edades, repartir cantidades, calcular salarios y resolver problemas en los que existe una cantidad desconocida.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/ecuprimer.webp') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuaciones 1.mp4') }}" type="video/mp4">
+            </video>
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuaciones lineales.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>Reglas importantes</h3>
+
+            <p>Una ecuación conserva su igualdad cuando se suma, resta, multiplica o divide ambos miembros por la misma cantidad, siempre que no se divida entre cero. Por eso, al despejar una incógnita debemos aplicar la misma operación a los dos lados.</p>
+
+            <p>Los términos con la misma variable y el mismo exponente se llaman términos semejantes. Por ejemplo, 3x y 5x se pueden sumar para obtener 8x, pero 3x y 5x² no son términos semejantes.</p>
+
+            <h3>Otro ejemplo resuelto</h3>
+
+            <div class="codigo-ejemplo">
+                <p>5x - 10 = 20</p>
+                <p>5x = 20 + 10</p>
+                <p>5x = 30</p>
+                <p>x = 30 ÷ 5</p>
+                <p><strong>x = 6</strong></p>
+            </div>
+
+            <p>Comprobación: 5(6) - 10 = 30 - 10 = 20. Como se obtiene el mismo resultado que el otro miembro, la solución es correcta.</p>
+
+            <h3>Errores frecuentes</h3>
+
+            <p>Algunos errores comunes son cambiar un término de miembro sin cambiar la operación, olvidar distribuir un número cuando hay paréntesis o no comprobar el resultado. Trabajar paso a paso ayuda a evitarlos.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>4. Ecuaciones de segundo grado</h2>
+
+            <p>Las ecuaciones de segundo grado son aquellas en las que la incógnita tiene como mayor exponente el número dos. También se conocen como ecuaciones cuadráticas.</p>
+
+            <p>Estas ecuaciones pueden tener dos soluciones reales diferentes, una solución real doble o ninguna solución real, dependiendo de sus coeficientes.</p>
+
+            <p><strong>Forma general:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>ax² + bx + c = 0</p>
+                <p>a ≠ 0</p>
+            </div>
+
+            <p>La letra a representa el coeficiente de x², b corresponde al coeficiente de x y c es el término independiente.</p>
+
+            <p><strong>Métodos de solución:</strong></p>
+
+            <p>La factorización consiste en expresar la ecuación como un producto de factores. El método de completar el cuadrado transforma la expresión para facilitar su solución. La fórmula general permite resolver ecuaciones cuadráticas incluso cuando no es sencillo factorizar.</p>
+
+            <p><strong>Fórmula general:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x = (-b ± √(b² - 4ac)) / 2a</p>
+            </div>
+
+            <p>La expresión b² - 4ac se conoce como discriminante y permite identificar el tipo de soluciones que tiene la ecuación.</p>
+
+            <p><strong>Ejemplo por factorización:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x² - 5x + 6 = 0</p>
+                <p>(x - 2)(x - 3) = 0</p>
+                <p>x - 2 = 0</p>
+                <p>x - 3 = 0</p>
+                <p><strong>x = 2 o x = 3</strong></p>
+            </div>
+
+            <p><strong>Aplicaciones:</strong> Se emplean para estudiar trayectorias de objetos, calcular áreas, analizar movimientos y resolver situaciones en física, ingeniería y economía.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/ecusegundo.png') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuaciones 2.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>El discriminante</h3>
+
+            <p>El discriminante es la parte de la fórmula general que se encuentra dentro de la raíz: b² - 4ac. Su resultado permite conocer cuántas soluciones reales tiene una ecuación de segundo grado.</p>
+
+            <p>Si el discriminante es positivo, existen dos soluciones reales diferentes. Si es igual a cero, existe una solución real doble. Si es negativo, no existen soluciones reales, aunque sí se pueden obtener soluciones complejas.</p>
+
+            <h3>Ejemplo paso a paso</h3>
+
+            <div class="codigo-ejemplo">
+                <p>x² - 5x + 6 = 0</p>
+                <p>a = 1, b = -5, c = 6</p>
+                <p>Discriminante = (-5)² - 4(1)(6)</p>
+                <p>Discriminante = 25 - 24</p>
+                <p>Discriminante = 1</p>
+            </div>
+
+            <p>Como el discriminante es positivo, la ecuación tiene dos soluciones reales diferentes. En este ejemplo, las soluciones son x = 2 y x = 3.</p>
+
+            <h3>Importancia</h3>
+
+            <p>Las ecuaciones cuadráticas ayudan a representar situaciones en las que una cantidad cambia de manera no lineal. Por eso se utilizan en el estudio de movimientos, áreas y diferentes fenómenos científicos.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>5. Ecuaciones de tercer grado</h2>
+
+            <p>Las ecuaciones de tercer grado son aquellas en las que la incógnita tiene como mayor exponente el número tres. También reciben el nombre de ecuaciones cúbicas.</p>
+
+            <p>Su solución puede requerir procedimientos más avanzados que los utilizados en las ecuaciones de primer y segundo grado. Algunos métodos comunes son la factorización, la agrupación de términos y la búsqueda de raíces.</p>
+
+            <p><strong>Forma general:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>ax³ + bx² + cx + d = 0</p>
+                <p>a ≠ 0</p>
+            </div>
+
+            <p>En esta expresión, a, b, c y d representan coeficientes conocidos, y x es la incógnita que se desea encontrar.</p>
+
+            <p><strong>Características:</strong> El mayor exponente de la variable es tres. Una ecuación cúbica tiene tres raíces al considerar los números complejos y contar sus multiplicidades, aunque no necesariamente todas son reales o diferentes.</p>
+
+            <p><strong>Ejemplo:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x³ - 6x² + 11x - 6 = 0</p>
+                <p>(x - 1)(x - 2)(x - 3) = 0</p>
+                <p>x - 1 = 0</p>
+                <p>x - 2 = 0</p>
+                <p>x - 3 = 0</p>
+                <p><strong>x = 1, x = 2 o x = 3</strong></p>
+            </div>
+
+            <p>En este ejemplo, las tres soluciones son reales y diferentes. Para comprobarlas, se sustituye cada valor en la ecuación original.</p>
+
+            <p><strong>Aplicaciones:</strong> Las ecuaciones de tercer grado aparecen en modelos matemáticos relacionados con volúmenes, cambios de magnitudes, movimiento y diversos problemas científicos.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/ecutercer.png') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuaciones 3.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>Características de las ecuaciones cúbicas</h3>
+
+            <p>Una ecuación cúbica contiene una variable elevada a la tercera potencia como su exponente mayor. Puede incluir también términos de segundo grado, primer grado y un término independiente.</p>
+
+            <p>Su representación gráfica corresponde a una función cúbica, cuya forma puede cambiar dependiendo de los coeficientes. La gráfica puede cruzar el eje horizontal en uno, dos o tres puntos distintos, según las raíces reales que tenga.</p>
+
+            <h3>Comprobación de las soluciones</h3>
+
+            <p>Para comprobar que x = 1 es una solución del ejemplo anterior, sustituimos el valor:</p>
+
+            <div class="codigo-ejemplo">
+                <p>1³ - 6(1)² + 11(1) - 6 = 0</p>
+                <p>1 - 6 + 11 - 6 = 0</p>
+                <p>0 = 0</p>
+            </div>
+
+            <p>Se puede realizar el mismo procedimiento con los valores 2 y 3. Si la igualdad se cumple, significa que el valor es una raíz de la ecuación.</p>
+
+            <h3>Importancia</h3>
+
+            <p>Estas ecuaciones permiten representar relaciones matemáticas más complejas y estudiar problemas que involucran cambios de volumen, dimensiones y diferentes magnitudes.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>6. Ecuaciones lineales con dos incógnitas</h2>
+
+            <p>Las ecuaciones lineales con dos incógnitas contienen dos variables, generalmente representadas por x y y. Para que una pareja de valores sea solución, ambos deben cumplir la igualdad.</p>
+
+            <p><strong>Forma general:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>ax + by = c</p>
+            </div>
+
+            <p>Los coeficientes a y b indican cómo participan las variables en la ecuación, mientras que c representa una cantidad conocida.</p>
+
+            <p>Una sola ecuación lineal con dos incógnitas generalmente tiene muchas soluciones. Estas soluciones pueden representarse gráficamente mediante una línea recta en el plano cartesiano.</p>
+
+            <p><strong>Ejemplo:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x + y = 10</p>
+                <p>Si x = 4:</p>
+                <p>4 + y = 10</p>
+                <p>y = 10 - 4</p>
+                <p><strong>y = 6</strong></p>
+            </div>
+
+            <p>Por lo tanto, la pareja ordenada (4, 6) es una solución de la ecuación. Otras parejas, como (2, 8) y (7, 3), también cumplen la igualdad.</p>
+
+            <p><strong>Representación gráfica:</strong> Para dibujar la recta, se pueden encontrar varias parejas de valores, ubicarlas en el plano cartesiano y unir los puntos mediante una línea recta.</p>
+
+            <p><strong>Aplicaciones:</strong> Estas ecuaciones permiten representar relaciones entre cantidades, como el costo de productos, la distancia recorrida y la relación entre el tiempo y otras magnitudes.</p>
+
+            <h3>Solución de una ecuación lineal con dos incógnitas</h3>
+
+            <p>Una solución es una pareja ordenada (x, y) que hace verdadera la igualdad. Para encontrarla, podemos elegir un valor para x y despejar y, o elegir un valor para y y despejar x.</p>
+
+            <h3>Tabla de valores</h3>
+
+            <p>Para la ecuación x + y = 10, algunas parejas que cumplen la igualdad son (0, 10), (2, 8), (4, 6), (6, 4) y (10, 0). Al ubicar estos puntos en el plano cartesiano se obtiene una línea recta.</p>
+
+            <h3>Interpretación de la gráfica</h3>
+
+            <p>Cada punto de la recta representa una pareja de valores que satisface la ecuación. Los puntos que no están sobre la recta no cumplen la igualdad. Por eso, una sola ecuación con dos incógnitas suele tener infinitas soluciones.</p>
+
+            <p>Estas relaciones se pueden utilizar para comparar dos cantidades, como el número de artículos comprados y su costo, o el tiempo transcurrido y la distancia recorrida cuando la velocidad es constante.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>7. Sistemas de ecuaciones</h2>
+
+            <p>Un sistema de ecuaciones está formado por dos o más ecuaciones que comparten incógnitas. La solución debe cumplir todas las ecuaciones del sistema al mismo tiempo.</p>
+
+            <p>Los sistemas de ecuaciones son útiles cuando un problema presenta varias condiciones que deben satisfacerse simultáneamente.</p>
+
+            <p><strong>Métodos de solución:</strong></p>
+
+            <p><strong>Sustitución:</strong> se despeja una variable en una ecuación y se sustituye su expresión en la otra.</p>
+
+            <p><strong>Igualación:</strong> se despeja la misma variable en ambas ecuaciones y después se igualan las expresiones obtenidas.</p>
+
+            <p><strong>Reducción:</strong> se suman o restan las ecuaciones para eliminar una de las incógnitas.</p>
+
+            <p><strong>Método gráfico:</strong> se representan las ecuaciones como rectas y se identifica su punto de intersección, si existe uno único.</p>
+
+            <p><strong>Ejemplo por reducción:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>x + y = 10</p>
+                <p>x - y = 2</p>
+                <p>Sumamos ambas ecuaciones:</p>
+                <p>2x = 12</p>
+                <p>x = 6</p>
+                <p>Sustituimos en la primera ecuación:</p>
+                <p>6 + y = 10</p>
+                <p><strong>y = 4</strong></p>
+            </div>
+
+            <p>La solución es x = 6 y y = 4, porque estos valores satisfacen las dos ecuaciones.</p>
+
+            <p><strong>Tipos de sistemas:</strong> Un sistema puede tener una solución única, infinitas soluciones o ninguna solución. Esto depende de la relación entre las ecuaciones.</p>
+
+            <p><strong>Aplicaciones:</strong> Se utilizan para calcular precios de distintos productos, determinar cantidades desconocidas, resolver problemas de mezclas y estudiar relaciones entre dos variables.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/sistemaecu.jpg') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/ecuaciones con incognitas.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>¿Qué significa la solución?</h3>
+
+            <p>La solución de un sistema es el conjunto de valores que satisface todas las ecuaciones al mismo tiempo. En un sistema de dos ecuaciones con dos incógnitas, la solución puede interpretarse como el punto donde se cruzan las rectas.</p>
+
+            <h3>Clasificación de los sistemas</h3>
+
+            <p>Un sistema compatible determinado tiene una sola solución: las rectas se cruzan en un punto. Un sistema compatible indeterminado tiene infinitas soluciones: las rectas coinciden. Un sistema incompatible no tiene solución: las rectas son paralelas y no se cruzan.</p>
+
+            <h3>Comprobación del ejemplo</h3>
+
+            <div class="codigo-ejemplo">
+                <p>x + y = 10 → 6 + 4 = 10</p>
+                <p>x - y = 2 → 6 - 4 = 2</p>
+                <p><strong>Las dos igualdades se cumplen.</strong></p>
+            </div>
+
+            <h3>Aplicación práctica</h3>
+
+            <p>Imagina que se compran dos tipos de productos y conocemos el total de artículos y el costo total. Un sistema de ecuaciones permite representar las dos condiciones y calcular cuántos productos de cada tipo se compraron.</p>
+
+            <p>Para elegir un método, conviene observar las ecuaciones: sustitución puede ser útil cuando una variable ya está despejada; reducción cuando los coeficientes permiten eliminar una variable fácilmente, e igualación cuando es sencillo despejar la misma incógnita en ambas ecuaciones.</p>
+
+        </section>
+
+
+        <section class="tarjeta-tema">
+
+            <h2>8. Plano cartesiano</h2>
+
+            <p>El plano cartesiano es un sistema de referencia que permite localizar puntos mediante dos ejes numéricos perpendiculares. Fue desarrollado a partir de los trabajos del matemático René Descartes.</p>
+
+            <p>Está formado por el eje horizontal X, conocido como eje de las abscisas, y el eje vertical Y, llamado eje de las ordenadas. Ambos se cruzan en el origen, que corresponde al punto (0, 0).</p>
+
+            <p><strong>Coordenadas:</strong> Un punto se representa mediante una pareja ordenada (x, y). La primera coordenada indica el desplazamiento horizontal y la segunda indica el desplazamiento vertical.</p>
+
+            <p><strong>Ejemplo:</strong></p>
+
+            <div class="codigo-ejemplo">
+                <p>A = (3, 2)</p>
+                <p>Desde el origen, se avanza 3 unidades a la derecha y 2 unidades hacia arriba.</p>
+            </div>
+
+            <p><strong>Los cuatro cuadrantes:</strong></p>
+
+            <p>Primer cuadrante: x es positiva y y es positiva.</p>
+
+            <p>Segundo cuadrante: x es negativa y y es positiva.</p>
+
+            <p>Tercer cuadrante: x es negativa y y es negativa.</p>
+
+            <p>Cuarto cuadrante: x es positiva y y es negativa.</p>
+
+            <p>Los puntos ubicados directamente sobre los ejes no pertenecen a ninguno de los cuatro cuadrantes.</p>
+
+            <p><strong>¿Cómo ubicar un punto?</strong> Primero se identifica la coordenada x y se avanza horizontalmente. Después se identifica la coordenada y y se avanza verticalmente hasta llegar a la posición indicada.</p>
+
+            <p><strong>Aplicaciones:</strong> El plano cartesiano se utiliza para representar funciones, construir gráficas, localizar puntos, estudiar movimientos y analizar información en geometría, física, estadística y otras áreas.</p>
+
+            <img src="{{ url_for('static', filename='imagenes/planocarteciano.webp') }}"
+                 alt="Ilustración del tema de matemáticas"
+                 width="300">
+
+            <video controls width="640">
+                <source src="{{ url_for('static', filename='videos/plano cartesiano.mp4') }}" type="video/mp4">
+            </video>
+
+            <h3>El origen y los ejes</h3>
+
+            <p>El punto donde se cruzan los ejes X y Y se llama origen y tiene coordenadas (0, 0). El eje X es horizontal y el eje Y es vertical. Los números indican la distancia respecto al origen y también la dirección del desplazamiento.</p>
+
+            <h3>Signos de las coordenadas</h3>
+
+            <p>En el primer cuadrante las dos coordenadas son positivas; en el segundo, x es negativa y y positiva; en el tercero, ambas son negativas; y en el cuarto, x es positiva y y negativa.</p>
+
+            <h3>Ejemplos de ubicación</h3>
+
+            <div class="codigo-ejemplo">
+                <p>A = (3, 2): 3 unidades a la derecha y 2 hacia arriba.</p>
+                <p>B = (-2, 4): 2 unidades a la izquierda y 4 hacia arriba.</p>
+                <p>C = (-3, -1): 3 unidades a la izquierda y 1 hacia abajo.</p>
+                <p>D = (4, -2): 4 unidades a la derecha y 2 hacia abajo.</p>
+            </div>
+
+            <h3>¿Para qué sirve?</h3>
+
+            <p>Además de ubicar puntos, el plano cartesiano permite comparar datos, representar relaciones entre variables y observar patrones. En mapas, gráficas y diseños se utilizan sistemas de coordenadas para indicar posiciones.</p>
+
+            <p>Para evitar confusiones, recuerda que siempre se escribe primero la coordenada horizontal x y después la vertical y: (x, y).</p>
+
+        </section>
+
+
+        <br><br>
+
+        <a href="/bienvenida">
+            <button class="materia programacion">
+                Regresar
+            </button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
+

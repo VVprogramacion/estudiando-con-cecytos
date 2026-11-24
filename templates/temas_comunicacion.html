@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Bienvenida - Estudiando con Cecytos🐆</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    
+     <div class="bienvenida">
+
+        <h1>🐆Estudiando con Cecytos🐆</h1>
+        <h2>Lengua y comunicacion</h2>
+
+        
+
+
+
+<h2>1.1 Tipos de textos</h2>
+
+<section class="tarjeta-tema">
+
+    <h3>Definición</h3>
+    <div>
+        <p>Los tipos de textos son categorías que permiten clasificar los escritos según su intención comunicativa, estructura y características lingüísticas.</p>
+        <p>Los principales tipos son narrativo, descriptivo, expositivo, argumentativo, dialogado e instructivo. Cada uno tiene una función diferente y se utiliza en distintas situaciones de la vida cotidiana.</p>
+        <p>Conocer los tipos de textos ayuda a identificar la información que se presenta y comprender mejor los mensajes que recibimos.</p>
+        <p>Para reconocer un tipo de texto es importante observar qué quiere comunicar el autor, cómo organiza sus ideas y qué recursos utiliza. Algunos textos buscan informar, otros entretener, explicar, convencer o enseñar a realizar una actividad.</p>
+        <p>Un mismo escrito puede combinar diferentes tipos de textos, aunque generalmente uno predomina sobre los demás.</p>
+    </div>
+
+    <h3>Texto narrativo</h3>
+    <div>
+        <p>El texto narrativo cuenta acontecimientos reales o ficticios protagonizados por personajes en un tiempo y espacio determinados.</p>
+        <p>Sus características principales son los personajes, el narrador, las acciones, el ambiente y la secuencia temporal. Generalmente tiene inicio, desarrollo y desenlace.</p>
+        <p>Se encuentra en cuentos, novelas, leyendas, fábulas y crónicas narrativas.</p>
+        <p>Ejemplo: Una mañana, Laura encontró una carta misteriosa frente a su puerta.</p>
+        <p>Este tipo de texto permite desarrollar la imaginación y conocer historias que transmiten emociones, experiencias y enseñanzas.</p>
+        <p>En una narración, los acontecimientos pueden presentarse en orden cronológico o comenzar por un momento importante para después explicar lo sucedido.</p>
+        <p>El narrador es la voz que cuenta la historia. Puede participar en los acontecimientos o narrarlos desde fuera. Los personajes pueden ser principales, secundarios o ambientales, dependiendo de su participación.</p>
+        <p>También es importante el espacio, que indica dónde suceden los hechos, y el tiempo, que permite ubicar cuándo ocurren.</p>
+        <p>La narración puede estar escrita en primera persona o en tercera persona, lo que permite presentar diferentes perspectivas de una misma historia.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/narrativo.png') }}" alt="Texto narrativo" width="300">
+
+        <video controls width="640">
+            <source src="{{ url_for('static', filename='videos/frameworks.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+
+    <h3>Texto descriptivo</h3>
+    <div>
+        <p>El texto descriptivo explica cómo es una persona, un objeto, un lugar, un animal o una situación. Su finalidad es ayudar al lector a imaginar aquello que se describe.</p>
+        <p>Utiliza adjetivos, detalles sensoriales y referencias a cualidades como el tamaño, el color, la forma, el olor y la textura.</p>
+        <p>Puede ser objetivo cuando presenta características reales, o subjetivo cuando expresa opiniones y sentimientos personales.</p>
+        <p>Ejemplo: La casa era pequeña, de paredes blancas, ventanas azules y un jardín lleno de flores.</p>
+        <p>Este tipo de texto aparece en retratos, catálogos, descripciones de lugares y obras literarias.</p>
+        <p>Una buena descripción organiza los detalles para que el lector pueda comprender claramente las características del objeto o lugar.</p>
+        <p>Cuando se describe a una persona se pueden mencionar sus características físicas, personalidad, vestimenta y comportamiento. Cuando se describe un lugar se pueden explicar sus dimensiones, ubicación y ambiente.</p>
+        <p>La descripción puede seguir un orden, por ejemplo, de lo general a lo particular, de arriba hacia abajo o del exterior al interior.</p>
+        <p>A diferencia de la narración, que se concentra en las acciones, la descripción se enfoca en las cualidades de aquello de lo que se habla.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/descriptivo.jpg') }}" alt="Texto descriptivo" width="300">
+    </div>
+
+    <h3>Texto expositivo</h3>
+    <div>
+        <p>El texto expositivo presenta información para explicar un tema de manera clara, objetiva y organizada.</p>
+        <p>Sus características incluyen definiciones, datos, ejemplos y explicaciones. Utiliza un lenguaje preciso para facilitar la comprensión.</p>
+        <p>Se encuentra en libros de texto, enciclopedias, artículos científicos e informes informativos.</p>
+        <p>Ejemplo: La fotosíntesis es el proceso mediante el cual las plantas utilizan la luz solar para producir sustancias orgánicas.</p>
+        <p>Su objetivo principal es transmitir conocimientos sin intentar convencer al lector de una opinión personal.</p>
+        <p>Para comprenderlo mejor, es importante identificar las ideas principales y relacionarlas con los ejemplos que presenta el autor.</p>
+        <p>Generalmente tiene tres partes: introducción, desarrollo y conclusión. En la introducción se presenta el tema; en el desarrollo se explican sus características y en la conclusión se recuperan las ideas más importantes.</p>
+        <p>Puede utilizar comparaciones, clasificaciones, definiciones, ejemplos y relaciones de causa y consecuencia para explicar la información.</p>
+        <p>Es importante que los datos sean claros y que la información provenga de fuentes confiables.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/expositivo.webp') }}" alt="Texto expositivo" width="300">
+    </div>
+
+    <h3>Texto argumentativo</h3>
+    <div>
+        <p>El texto argumentativo defiende una postura o una opinión mediante razones, evidencias y ejemplos.</p>
+        <p>Se compone generalmente de una tesis, que presenta la idea principal; argumentos, que justifican esa idea; y una conclusión, que resume la postura defendida.</p>
+        <p>Su propósito es convencer o persuadir al lector utilizando razones comprensibles y argumentos bien organizados.</p>
+        <p>Ejemplo: Las escuelas deberían fomentar la lectura diaria porque mejora el vocabulario, la comprensión y la expresión escrita.</p>
+        <p>Este tipo de texto se utiliza en ensayos, editoriales, debates y artículos de opinión.</p>
+        <p>Para construir un argumento sólido, es importante utilizar información confiable, evitar contradicciones y explicar por qué las razones presentadas apoyan la opinión.</p>
+        <p>La tesis representa la postura del autor, mientras que los argumentos son las razones que permiten defenderla. Estos pueden apoyarse en datos, ejemplos, comparaciones o investigaciones.</p>
+        <p>También puede incluir contraargumentos, que son opiniones diferentes a la postura defendida y que el autor responde para fortalecer su explicación.</p>
+        <p>Es importante diferenciar una opinión personal de un argumento respaldado por información y razones.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/argumentativo.webp') }}" alt="Texto argumentativo" width="300">
+    </div>
+
+    <h3>Texto dialogado</h3>
+    <div>
+        <p>El texto dialogado representa una conversación entre dos o más interlocutores. Permite mostrar ideas, emociones, preguntas y respuestas.</p>
+        <p>Sus características principales son las intervenciones de los participantes, el intercambio de información y el uso de preguntas o expresiones.</p>
+        <p>Puede presentar un lenguaje espontáneo, como en una conversación cotidiana, o un lenguaje elaborado, como en una obra teatral.</p>
+        <p>Ejemplo:</p>
+        <p>—¿Terminaste la tarea?</p>
+        <p>—Sí, la entregué esta mañana.</p>
+        <p>Se encuentra en entrevistas, obras teatrales, conversaciones y diálogos de novelas.</p>
+        <p>Los diálogos ayudan a conocer la personalidad de los personajes y permiten que la información se presente de una manera más dinámica.</p>
+        <p>En los textos escritos, las intervenciones pueden señalarse mediante rayas de diálogo o con el nombre de cada participante, como sucede en los guiones teatrales.</p>
+        <p>También existen diálogos directos, que reproducen las palabras exactas de los personajes, e indirectos, donde el narrador explica lo que alguien dijo.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/dialogo.jpg') }}" alt="Texto dialogado" width="300">
+    </div>
+
+    <h3>Texto instructivo</h3>
+    <div>
+        <p>El texto instructivo indica cómo realizar una actividad o alcanzar un resultado mediante indicaciones claras y ordenadas.</p>
+        <p>Utiliza verbos de acción, instrucciones directas y pasos que deben seguirse para completar una tarea correctamente.</p>
+        <p>Se encuentra en recetas, manuales, reglamentos e instrucciones de uso de aparatos electrónicos.</p>
+        <p>Ejemplo: Primero, enciende la computadora. Después, abre el navegador y escribe la dirección de la página que deseas visitar.</p>
+        <p>Su importancia consiste en facilitar la realización de actividades y reducir los errores durante un procedimiento.</p>
+        <p>Para que sea útil, las instrucciones deben presentarse en un orden lógico y utilizar palabras fáciles de comprender.</p>
+        <p>Generalmente contiene un título, materiales o requisitos necesarios y una serie de pasos. En algunos casos también incluye advertencias y recomendaciones.</p>
+        <p>Utiliza expresiones como primero, después, a continuación y finalmente para indicar el orden de las acciones.</p>
+        <p>Un instructivo debe ser preciso, completo y fácil de seguir para que cualquier persona pueda comprender el procedimiento.</p>
+
+        <img src="{{ url_for('static', filename='imagenes/instructivo.webp') }}" alt="Texto instructivo" width="300">
+    </div>
+
+    <h3>Otras clasificaciones</h3>
+    <div>
+        <p>Los textos también pueden clasificarse según su medio, ámbito y finalidad comunicativa.</p>
+        <p>Por su medio, pueden ser orales, escritos, digitales o audiovisuales. Cada uno utiliza diferentes recursos para transmitir información.</p>
+        <p>Por su ámbito, pueden ser académicos, literarios, periodísticos, científicos, jurídicos o publicitarios.</p>
+        <p>Por su finalidad, pueden buscar informar, entretener, convencer, explicar o instruir al lector.</p>
+        <p>Por ejemplo, una noticia informa sobre un acontecimiento, mientras que un anuncio publicitario intenta despertar el interés por un producto.</p>
+        <p>Estas clasificaciones facilitan el análisis de los mensajes y permiten elegir el tipo de texto más adecuado para cada situación.</p>
+        <p>Los textos orales utilizan la voz, la entonación y los gestos. Los escritos transmiten información mediante palabras organizadas en un soporte físico o digital. Los audiovisuales combinan imágenes, sonidos y lenguaje.</p>
+        <p>En el ámbito académico se busca explicar conocimientos, mientras que en el periodístico se informa sobre acontecimientos de interés público.</p>
+    </div>
+
+    <h3>Importancia de los tipos de textos</h3>
+    <div>
+        <p>Reconocer los tipos de textos permite comprender mejor lo que se lee y elegir la forma adecuada de comunicar una idea.</p>
+        <p>También ayuda a desarrollar habilidades de lectura, escritura, análisis y expresión oral.</p>
+        <p>Un mismo texto puede combinar diferentes tipos. Por ejemplo, una novela puede narrar acontecimientos, describir lugares e incluir diálogos entre sus personajes.</p>
+        <p>Por esta razón, identificar la intención comunicativa de un escrito es importante para interpretar correctamente su contenido.</p>
+        <p>En la escuela, conocer los tipos de textos permite elaborar tareas, reportes, investigaciones, exposiciones y ensayos de manera más organizada.</p>
+        <p>Además, ayuda a adaptar el lenguaje dependiendo de la situación y del público al que se dirige el mensaje.</p>
+    </div>
+
+    <video controls width="640">
+        <source src="{{ url_for('static', filename='videos/TIPOS DE TEXTOS EXPLICADOS CON EJEMPLOS.mp4') }}" type="video/mp4">
+    </video>
+
+</section>
+
+
+<h2>1.2 Movimientos literarios</h2>
+
+<section class="tarjeta-tema">
+
+    <h3>Definición</h3>
+    <div>
+        <p>Los movimientos literarios son corrientes culturales y artísticas que comparten características temáticas, estéticas y estilísticas durante un periodo histórico.</p>
+        <p>Cada movimiento refleja las ideas, los conflictos, los valores y las transformaciones de la sociedad en la que surgió.</p>
+        <p>A través de la literatura, los escritores expresan sus pensamientos, emociones y formas de interpretar el mundo.</p>
+        <p>Estudiar estos movimientos permite comprender cómo ha evolucionado la literatura y cómo los acontecimientos históricos han influido en las obras.</p>
+        <p>Los movimientos literarios permiten identificar semejanzas entre diferentes escritores y reconocer cómo cambian los temas, el lenguaje y las formas de expresión con el paso del tiempo.</p>
+        <p>No todos los movimientos surgieron al mismo tiempo en todos los países, ya que cada región tuvo sus propios procesos históricos y culturales.</p>
+    </div>
+
+    <h3>1. Literatura clásica</h3>
+    <div>
+        <p>La literatura clásica surgió en la Antigüedad griega y romana y constituye una de las bases de la literatura occidental.</p>
+        <p>Sus características incluyen la mitología, los héroes, el destino, la virtud y la búsqueda del equilibrio.</p>
+        <p>Entre sus autores más importantes se encuentran Homero y Sófocles.</p>
+        <p>Sus obras representativas son La Odisea y Edipo rey.</p>
+        <p>Los relatos clásicos suelen presentar personajes que enfrentan desafíos y deben tomar decisiones que influyen en su destino.</p>
+        <p>Sus historias han influido en numerosas obras posteriores y continúan estudiándose por sus temas universales.</p>
+        <p>Entre sus géneros destacan la épica, la tragedia y la comedia. La épica relataba las hazañas de héroes, la tragedia presentaba conflictos humanos y la comedia abordaba situaciones de manera humorística.</p>
+        <p>La mitología también tuvo un papel importante porque transmitía relatos sobre dioses, héroes y el origen de diferentes fenómenos.</p>
+    </div>
+
+    <h3>2. Literatura medieval</h3>
+    <div>
+        <p>La literatura medieval se desarrolló aproximadamente entre los siglos V y XV, durante la Edad Media.</p>
+        <p>Sus características principales son la religión, la caballería, la tradición oral y los valores comunitarios.</p>
+        <p>Entre sus representantes se encuentran Dante Alighieri y el autor anónimo del Cantar de mio Cid.</p>
+        <p>Sus obras destacadas incluyen La divina comedia y el Cantar de mio Cid.</p>
+        <p>Muchas obras medievales transmitían enseñanzas religiosas, narraban hazañas de héroes o difundían valores considerados importantes para la sociedad.</p>
+        <p>La transmisión oral también tuvo un papel fundamental, pues permitía compartir historias antes de que fueran registradas por escrito.</p>
+        <p>Los cantares de gesta relataban las aventuras y hazañas de personajes heroicos. Los juglares difundían estas historias mediante canciones y narraciones ante diferentes públicos.</p>
+        <p>Los monasterios también contribuyeron a conservar manuscritos y textos importantes de la época.</p>
+    </div>
+
+    <h3>3. Renacimiento</h3>
+    <div>
+        <p>El Renacimiento se desarrolló principalmente durante los siglos XV y XVI. Se caracterizó por recuperar el interés por la cultura clásica y valorar las capacidades del ser humano.</p>
+        <p>Sus características incluyen el humanismo, el equilibrio, la armonía y el interés por el conocimiento.</p>
+        <p>Entre sus autores destacan Garcilaso de la Vega y William Shakespeare.</p>
+        <p>Una obra representativa es Romeo y Julieta, de William Shakespeare, además de los sonetos de Garcilaso.</p>
+        <p>Durante este periodo, la literatura exploró temas como el amor, la naturaleza, la belleza y la experiencia humana.</p>
+        <p>El Renacimiento representó una transformación cultural que impulsó nuevas formas de pensamiento y expresión artística.</p>
+        <p>El humanismo fue una de sus ideas principales, pues impulsó el estudio de la historia, la filosofía, las lenguas y las artes.</p>
+        <p>La invención de la imprenta facilitó la difusión de libros y conocimientos, permitiendo que las obras llegaran a un mayor número de personas.</p>
+    </div>
+
+    <h3>4. Barroco</h3>
+    <div>
+        <p>El Barroco se desarrolló principalmente durante el siglo XVII y se distinguió por su lenguaje elaborado y sus contrastes.</p>
+        <p>Sus características incluyen metáforas, complejidad, desengaño y reflexiones sobre el paso del tiempo y las dificultades de la vida.</p>
+        <p>Entre sus autores se encuentran Luis de Góngora, Francisco de Quevedo y Sor Juana Inés de la Cruz.</p>
+        <p>Entre sus obras representativas están Primero sueño y La vida es sueño.</p>
+        <p>Los escritores barrocos utilizaban recursos literarios para expresar ideas complejas y provocar distintas interpretaciones en sus lectores.</p>
+        <p>Este movimiento también reflejó las preocupaciones sociales y culturales de su época.</p>
+        <p>Se distinguieron tendencias como el culteranismo, que utilizaba un lenguaje elaborado y abundantes imágenes, y el conceptismo, que buscaba expresar ideas mediante juegos de palabras y significados.</p>
+        <p>Entre sus temas frecuentes se encuentran la apariencia, la realidad, la muerte, el tiempo y la incertidumbre sobre la vida.</p>
+    </div>
+
+    <h3>5. Neoclasicismo</h3>
+    <div>
+        <p>El Neoclasicismo surgió principalmente durante el siglo XVIII y estuvo relacionado con la importancia de la razón y el conocimiento.</p>
+        <p>Sus características principales son el orden, la claridad, el equilibrio y la finalidad didáctica.</p>
+        <p>Entre sus representantes se encuentran Leandro Fernández de Moratín y Jean de La Fontaine.</p>
+        <p>Algunas obras representativas son El sí de las niñas y las fábulas de La Fontaine.</p>
+        <p>Los autores neoclásicos consideraban que la literatura podía enseñar valores y ayudar a mejorar las costumbres de la sociedad.</p>
+        <p>Por ello, muchas de sus obras presentan situaciones que invitan a reflexionar sobre las decisiones humanas.</p>
+        <p>Este movimiento estuvo relacionado con la Ilustración, que defendía la educación, el conocimiento y el pensamiento racional.</p>
+        <p>El teatro fue uno de los géneros importantes porque permitía representar situaciones sociales y transmitir enseñanzas al público.</p>
+    </div>
+
+    <h3>6. Romanticismo</h3>
+    <div>
+        <p>El Romanticismo se desarrolló desde finales del siglo XVIII y durante la primera mitad del siglo XIX, aunque sus fechas variaron según la región.</p>
+        <p>Se caracteriza por los sentimientos intensos, la libertad, el individualismo y la importancia de la naturaleza.</p>
+        <p>Entre sus autores destacan Gustavo Adolfo Bécquer, José de Espronceda y Mary Shelley.</p>
+        <p>Algunas obras representativas son Rimas y Frankenstein.</p>
+        <p>Los escritores románticos daban gran importancia a la imaginación, los sueños y las experiencias personales.</p>
+        <p>En muchas obras aparecen personajes que buscan libertad y expresan sentimientos que entran en conflicto con las normas sociales.</p>
+        <p>Otros temas frecuentes son el amor imposible, la soledad, la nostalgia, la rebeldía y lo misterioso.</p>
+        <p>La naturaleza se utiliza frecuentemente para representar las emociones de los personajes y expresar sus estados de ánimo.</p>
+    </div>
+
+    <h3>7. Realismo</h3>
+    <div>
+        <p>El Realismo se desarrolló durante el siglo XIX y buscó representar la sociedad y la vida cotidiana de una manera detallada.</p>
+        <p>Sus características incluyen la descripción de ambientes reales, los problemas sociales y el comportamiento de las personas.</p>
+        <p>Entre sus representantes se encuentran Benito Pérez Galdós y Gustave Flaubert.</p>
+        <p>Sus obras destacadas incluyen Fortunata y Jacinta y Madame Bovary.</p>
+        <p>Los escritores realistas observaban la sociedad y utilizaban sus obras para mostrar las diferencias sociales, las costumbres y los conflictos de la época.</p>
+        <p>Este movimiento contribuyó al desarrollo de la novela como una forma de analizar la realidad.</p>
+        <p>Los personajes suelen tener una personalidad compleja y enfrentarse a situaciones relacionadas con la familia, el trabajo, la economía y las relaciones sociales.</p>
+        <p>Los autores buscaban presentar situaciones creíbles y ambientes reconocibles para que el lector pudiera identificarse con los acontecimientos.</p>
+    </div>
+
+    <h3>8. Simbolismo</h3>
+    <div>
+        <p>El Simbolismo se desarrolló principalmente durante las últimas décadas del siglo XIX y buscó expresar ideas y emociones mediante símbolos.</p>
+        <p>Sus características incluyen la musicalidad, las sugerencias, las imágenes poéticas y la exploración de la subjetividad.</p>
+        <p>Entre sus representantes se encuentran Charles Baudelaire y Stéphane Mallarmé.</p>
+        <p>Una obra representativa es Las flores del mal, de Charles Baudelaire.</p>
+        <p>Los simbolistas no siempre expresaban sus ideas de manera directa, sino que utilizaban imágenes y símbolos para que el lector interpretara diferentes significados.</p>
+        <p>Este movimiento influyó en la poesía moderna y en otras corrientes literarias posteriores.</p>
+        <p>Los colores, sonidos, objetos y elementos de la naturaleza podían representar emociones o ideas que no se expresaban directamente.</p>
+        <p>Su objetivo era despertar sensaciones y permitir diferentes interpretaciones de una misma obra.</p>
+    </div>
+
+    <h3>9. Modernismo hispanoamericano</h3>
+    <div>
+        <p>El Modernismo hispanoamericano surgió a finales del siglo XIX y principios del siglo XX. Renovó el lenguaje y las formas de expresión literaria.</p>
+        <p>Sus características incluyen la musicalidad, la riqueza de imágenes, el cosmopolitismo y la búsqueda de la belleza.</p>
+        <p>Entre sus principales autores se encuentran Rubén Darío y José Martí.</p>
+        <p>Una obra representativa es Azul..., de Rubén Darío.</p>
+        <p>Los escritores modernistas experimentaron con el ritmo, los sonidos y las imágenes para crear una expresión literaria diferente.</p>
+        <p>Este movimiento tuvo gran importancia porque fortaleció la identidad y la proyección internacional de la literatura hispanoamericana.</p>
+        <p>Recibió influencias del parnasianismo y el simbolismo, pero desarrolló características propias dentro de la literatura en español.</p>
+        <p>Rubén Darío fue uno de los principales representantes y contribuyó a renovar la poesía mediante el uso de nuevas formas de expresión.</p>
+    </div>
+
+    <h3>10. Vanguardias</h3>
+    <div>
+        <p>Las vanguardias surgieron durante las primeras décadas del siglo XX y buscaron romper con las normas artísticas tradicionales.</p>
+        <p>Sus características incluyen la experimentación, la creatividad y la búsqueda de nuevas formas de escribir.</p>
+        <p>Entre sus corrientes se encuentran el surrealismo, el futurismo, el dadaísmo y el cubismo literario.</p>
+        <p>Sus representantes incluyen a André Breton, Filippo Tommaso Marinetti y Vicente Huidobro.</p>
+        <p>Entre sus obras y textos representativos se encuentran el Manifiesto surrealista y Altazor.</p>
+        <p>Los escritores de vanguardia experimentaron con el lenguaje, la disposición de las palabras y las imágenes para expresar nuevas ideas.</p>
+        <p>El futurismo mostró interés por la velocidad y la modernidad; el dadaísmo cuestionó las convenciones artísticas; el cubismo experimentó con diferentes perspectivas y el surrealismo exploró los sueños y el inconsciente.</p>
+        <p>Estas corrientes influyeron en la poesía, la narrativa y otras manifestaciones artísticas del siglo XX.</p>
+    </div>
+
+    <h3>11. Boom latinoamericano</h3>
+    <div>
+        <p>El Boom latinoamericano fue un fenómeno literario que alcanzó especial importancia durante las décadas de 1960 y 1970.</p>
+        <p>Se caracterizó por la experimentación narrativa, las estructuras temporales complejas y la renovación de la novela.</p>
+        <p>Entre sus autores más representativos se encuentran Julio Cortázar, Gabriel García Márquez, Mario Vargas Llosa y Carlos Fuentes.</p>
+        <p>Algunas obras destacadas son Rayuela, Cien años de soledad, La ciudad y los perros y La muerte de Artemio Cruz.</p>
+        <p>Los escritores de este movimiento exploraron nuevas formas de contar historias y presentaron temas relacionados con la identidad, la sociedad, la política y la historia de América Latina.</p>
+        <p>Sus obras alcanzaron reconocimiento internacional y contribuyeron a que la literatura latinoamericana tuviera una mayor presencia en el mundo.</p>
+        <p>Entre sus recursos se encuentran los saltos temporales, los cambios de narrador, las historias que no siguen un orden cronológico y la combinación de situaciones cotidianas con elementos extraordinarios.</p>
+        <p>El Boom no fue un movimiento con reglas únicas, sino un fenómeno cultural y editorial que dio mayor visibilidad a diferentes escritores latinoamericanos.</p>
+    </div>
+
+    <h3>Importancia de los movimientos literarios</h3>
+    <div>
+        <p>Los movimientos literarios permiten comprender cómo cambia la literatura con el paso del tiempo y cómo se relaciona con la sociedad.</p>
+        <p>También ayudan a identificar las características de diferentes autores y obras, así como las ideas que influyeron en su creación.</p>
+        <p>Estudiarlos favorece la comprensión lectora, el pensamiento crítico y el conocimiento de la historia cultural.</p>
+        <p>Cada movimiento aporta nuevas formas de expresar emociones, contar historias y reflexionar sobre la experiencia humana.</p>
+        <p>Comparar los movimientos literarios permite observar los cambios en el lenguaje, los temas, los géneros y la manera de representar la realidad.</p>
+        <p>También ayuda a comprender que las obras literarias están relacionadas con el contexto histórico, social y cultural en el que fueron creadas.</p>
+        <p>Para analizar una obra es importante identificar su época, su autor, sus características y los elementos que permiten relacionarla con un movimiento literario.</p>
+    </div>
+
+</section>
+
+
+    <img src="{{ url_for('static', filename='imagenes/literarios.webp') }}"
+         alt="Frameworks"
+         width="300">
+
+         <video controls width="640">
+    <source src="{{ url_for('static', filename='videos/Movimientos literarios.mp4') }}" type="video/mp4">
+    </video>
+
+    
+</section>
+
+<br><br>
+
+    <a href="/bienvenida">
+
+        <button class="materia programacion">
+            Regresar
+        </button>
+
+    </a>
+</body>

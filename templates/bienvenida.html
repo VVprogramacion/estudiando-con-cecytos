@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bienvenida - Estudiando con Cecytos🐆</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <style>
+     
+    /* Contenedor de todas las materias */
+    .materias {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 35px;
+        align-items: start;
+    }
+
+    /* Tarjetas blancas de las materias */
+    .grupo-materia {
+        background-color: #fff5fa;
+        padding: 22px;
+        border-radius: 22px;
+        box-sizing: border-box;
+        width: 100%;
+        height: fit-content;
+        min-height: 0;
+        align-self: start;
+        box-shadow: 0 5px 15px rgba(122, 72, 109, 0.12);
+    }
+
+    /* Encabezados de las materias */
+    .grupo-materia h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        min-height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    /* Botones de exámenes */
+    .grupo-materia a,
+    .grupo-materia button {
+        box-sizing: border-box;
+    }
+
+    /* Evita espacios adicionales en los elementos */
+    .grupo-materia p {
+        margin-bottom: 10px;
+    }
+
+    /* Pantallas pequeñas */
+    @media (max-width: 700px) {
+        .materias {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+
+
+        /* COLORES */
+        .diagnostico {
+            background-color: #f8cce0;
+            color: #efa7cd;
+        }
+
+        .evaluacion-final {
+            background-color: #ded5fa;
+            color: #51417c;
+        }
+
+        .matematicas {
+            background-color: #f7c6d9;
+            color: #f593bd;
+        }
+
+        .programacion {
+            background-color: #c9e7ff;
+            color: #285579;
+        }
+
+        .lengua {
+            background-color: #ffe2ad;
+            color: #79531e;
+        }
+
+        .humanidades {
+            background-color: #d9f0d2;
+            color: #38613a;
+        }
+
+        /* SUBTEMAS DE PROGRAMACIÓN */
+        .subtitulo-examenes {
+            margin: 18px 0 10px;
+            font-size: 14px;
+            color: #754765;
+            font-weight: bold;
+        }
+
+        /* BOTONES GENERALES */
+        .acciones {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .acciones button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-weight: bold;
+            background-color: #f8cce0;
+            color: #9f6692;
+        }
+
+        /* TABLET Y CELULAR */
+        @media (max-width: 650px) {
+            .materias {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "matematicas"
+                    "programacion"
+                    "humanidades"
+                    "lengua";
+                width: 92%;
+                gap: 18px;
+            }
+        }
+
+        @media (max-width: 380px) {
+            .evaluaciones {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bienvenida">
+
+        <h1>🐆 Bienvenido a Estudiando con Cecytos 🐆</h1>
+
+        <p>
+            El propósito de nuestra página web es ayudar a los estudiantes
+            a quienes se les dificulta aprender sobre un tema y que obtienen
+            calificaciones deficientes, mediante explicaciones y evaluaciones
+            que les permitan reforzar sus conocimientos.
+        </p>
+
+        <div class="acciones">
+
+            <button type="button" onclick="saludar()">
+                 Saluda
+            </button>
+
+            <button type="button" onclick="preguntar()">
+                 Pregunta mi nombre
+            </button>
+
+        </div>
+
+        <p>Selecciona una materia para comenzar a estudiar.</p>
+
+        <div class="acciones">
+            <a href="{{ url_for('juegos') }}" style="text-decoration: none;">
+                <button type="button">
+                    🎮 ¡Ir a mis juegos educativos!
+                </button>
+            </a>
+        </div>
+
+        <h2> Mis materias</h2>
+
+        <div class="materias">
+
+            <!-- MATEMÁTICAS -->
+            <div class="grupo-materia">
+
+                <a class="enlace-materia" href="/matematicas">
+                    <button type="button" class="materia matematicas">
+                        📐 Matemáticas
+                    </button>
+                </a>
+
+                <div class="evaluaciones">
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion diagnostico"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSfm7XX1HQLSPzPkpUuxLJ0KAEHY8sP8DKE9RnPxtEKrAm9JMg/viewform?usp=publish-editor')">
+                        📝 Examen diagnóstico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion evaluacion-final"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSeZBoZqy4y9rTNgP11PzXIZ_j2C7HqX-dPNeTUAHA7eL4VvCg/viewform?usp=publish-editor')">
+                        🎓 Evaluación final
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- PROGRAMACIÓN -->
+            <div class="grupo-materia">
+
+                <a class="enlace-materia" href="/programacion">
+                    <button type="button" class="materia programacion">
+                        💻 Programación
+                    </button>
+                </a>
+
+                <p class="subtitulo-examenes">
+                    🧩 Metodologías Ágiles
+                </p>
+
+                <div class="evaluaciones">
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion diagnostico"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSc8IdCDt16B0BIUOp4ZBI0BFYIwwgTDYK4jNstzz64BhSkZjg/viewform?usp=header')">
+                        📝 Examen diagnóstico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion evaluacion-final"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSfmvA2c5bMPbRF0KyQJuhc12SIUDEqgUfII3TyHWSIir5cW8g/viewform?usp=header')">
+                        🎓 Evaluación final
+                    </button>
+
+                </div>
+
+                <p class="subtitulo-examenes">
+                    🛠️ Frameworks
+                </p>
+
+                <div class="evaluaciones">
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion diagnostico"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSfLqjV3BEPa9ECDHb3kpCPLfe7RPQ0mKv_6xAF0hExdgsG57A/viewform?usp=publish-editor')">
+                        📝 Examen diagnóstico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion evaluacion-final"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSf-kbQQ8BY76N1iM62lGk2Ku7GTKKLtZpBdegfp0HyX7VLJbg/viewform?usp=publish-editor')">
+                        🎓 Evaluación final
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- LENGUA Y COMUNICACIÓN -->
+            <div class="grupo-materia">
+
+                <a class="enlace-materia" href="/lengua_comunicacion">
+                    <button type="button" class="materia lengua">
+                        📖 Lengua y Comunicación
+                    </button>
+                </a>
+
+                <div class="evaluaciones">
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion diagnostico"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSdHc7vk6pbXFMcsXiaZYJZA-prytCansSLGTwphmf0sblz-KQ/viewform?usp=header')">
+                        📝 Examen diagnóstico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion evaluacion-final"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSdPiwPmSPLcdMtKxGXmv6VZtnoo66zTkynqS5tadzFg_ooQYw/viewform?usp=publish-editor')">
+                        🎓 Evaluación final
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- HUMANIDADES -->
+            <div class="grupo-materia">
+
+                <a class="enlace-materia" href="/humanidades">
+                    <button type="button" class="materia humanidades">
+                        📚 Humanidades
+                    </button>
+                </a>
+
+                <div class="evaluaciones">
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion diagnostico"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSdRSQ9OBTbp0vORLs8G70Dkzd4FUxMIe0u7rmy7QfA-X7CYHA/viewform?usp=publish-editor')">
+                        📝 Examen diagnóstico
+                    </button>
+
+                    <button
+                        type="button"
+                        class="boton-evaluacion evaluacion-final"
+                        onclick="abrirFormulario('https://docs.google.com/forms/d/e/1FAIpQLSf2XTqfvSE1bMPII8QDZqCr1aMafopKABmaFEsPNWHRjrHs2g/viewform?usp=header')">
+                        🎓 Evaluación final
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function saludar() {
+            alert("¡Hola! Bienvenido a esta página web.");
+        }
+
+        function preguntar() {
+            const nombre = prompt("¿Cuál es tu nombre?");
+
+            if (nombre !== null && nombre.trim() !== "") {
+                alert(
+                    "¡Hola " + nombre.trim() +
+                    "! Bienvenido a esta página."
+                );
+            } else if (nombre !== null) {
+                alert("No escribiste ningún nombre.");
+            }
+        }
+
+        function abrirFormulario(enlace) {
+            window.open(enlace, "_blank", "noopener,noreferrer");
+        }
+    </script>
+
+</body>
+<br><br>
+
+<footer>Si tienes alguna duda contactanos por instagram
+            <div class="contacto-instagram">
+                <a href="https://www.instagram.com/cecytos.no.reprobados/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Contacto
+            </a>
+            </div>
+</footer>
+
+</html>
+
+
